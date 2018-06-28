@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun 28 17:39:40 2018
+# Process ID: 15880
+# Current directory: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20036 C:\Users\Leon Schmidt\Documents\Studium\2. Semester\VHDL\PS2-Controller\PS2-Keyboard-Controller\.gitignore\PS2_Keyboard_Controler\PS2_Keyboard_Controler.xpr
+# Log file: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/vivado.log
+# Journal file: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ledout[7]} {ledout[6]} {ledout[5]} {ledout[4]} {ledout[3]} {ledout[2]} {ledout[1]} {ledout[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segmentout[14]} {segmentout[13]} {segmentout[12]} {segmentout[11]} {segmentout[10]} {segmentout[9]} {segmentout[8]} {segmentout[7]} {segmentout[6]} {segmentout[5]} {segmentout[4]} {segmentout[3]} {segmentout[2]} {segmentout[1]} {segmentout[0]}]]
+place_ports {segmentout[14]} U13
+place_ports {segmentout[13]} K2
+place_ports {segmentout[12]} T14
+place_ports {segmentout[11]} P14
+place_ports {segmentout[10]} J14
+place_ports {segmentout[9]} T9
+place_ports {segmentout[8]} J18
+place_ports {segmentout[7]} J17
+place_ports {segmentout[6]} T10
+place_ports {segmentout[5]} R10
+place_ports {segmentout[4]} K16
+place_ports {segmentout[3]} K13
+place_ports {segmentout[2]} P15
+place_ports {segmentout[1]} T11
+place_ports {segmentout[0]} L18
+place_ports {ledout[7]} U16
+place_ports {ledout[6]} U17
+place_ports {ledout[5]} V17
+place_ports {ledout[4]} R18
+place_ports {ledout[3]} N14
+place_ports {ledout[2]} J13
+place_ports {ledout[1]} K15
+place_ports {ledout[0]} H17
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

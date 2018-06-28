@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -37,24 +37,26 @@ entity keyboard_controler is
            t_clock : in STD_LOGIC;
            reset : in STD_LOGIC;
            clk : in STD_LOGIC;
-           ledort : buffer STD_LOGIC_VECTOR (7 downto 0);
-           segmentort : out STD_LOGIC_VECTOR (14 downto 0));
+           ledout : buffer STD_LOGIC_VECTOR (7 downto 0);
+           segmentout : out STD_LOGIC_VECTOR (14 downto 0));
 end keyboard_controler;
 
 architecture Behavioral of keyboard_controler is
-    signal e0, f0, ef, ce, ready : STD_LOGIC;
+    signal e0, f0, ef, ce, set_ready, ready : STD_LOGIC;
     signal scancode_reg, scancode, akt_scancode : STD_LOGIC_VECTOR(7 downto 0);
+	--signal t_data_reg : STD_LOGIC_VECTOR(10 downto 0);
     signal seg_akt, seg_7, seg_6, seg_5, seg_4, seg_3, seg_2, seg_1, seg_0 : STD_LOGIC_VECTOR (6 downto 0);
     signal counter : STD_LOGIC_VECTOR(12 downto 0);
-    signal scan_counter : STD_LOGIC_VECTOR(3 downto 0);
+    signal in_counter : STD_LOGIC_VECTOR(3 downto 0) := "0000";
     type state is (s1, s2);
     signal s : state;
 begin
 
-    create_scancode : process (t_clock, t_data, scan_counter)
-        begin
-            if t_clock'event and t_clock = '0' then
-                case scan_counter is
+	input_parallizer : process (t_clock, t_data, in_counter)
+		begin
+			if t_clock'event and t_clock = '0' then
+                case in_counter is
+					--when "0000" =>	in_counter <= in_counter;
                     when "0001" =>  scancode_reg(0) <= t_data;
                     when "0010" =>  scancode_reg(1) <= t_data;
                     when "0011" =>  scancode_reg(2) <= t_data;
@@ -63,15 +65,33 @@ begin
                     when "0110" =>  scancode_reg(5) <= t_data;
                     when "0111" =>  scancode_reg(6) <= t_data;
                     when "1000" =>  scancode_reg(7) <= t_data;
-                    when "1001" =>  scancode <= scancode_reg;
-                                    ready <= '1';
-                    when "1010" =>  scan_counter <= "1111";
-                    when others =>  scan_counter <= scan_counter;
+									scancode <= scancode_reg;
+									--set_ready <= '1';
+                    --when "1010" =>  in_counter <= in_counter;
+					when others =>  in_counter <= in_counter;
                 end case;
-                scan_counter <= STD_LOGIC_VECTOR(to_unsigned(to_integer(unsigned( scan_counter )) +1, 4));
+				if in_counter = "1010" then
+					in_counter <= (others => '0');
+					set_ready <= '1';
+				else
+					in_counter <= in_counter + 1; --STD_LOGIC_VECTOR(to_unsigned(to_integer(unsigned( in_counter )) +1, 4));
+				end if;
+				--ledout <= "0000" & in_counter;
             end if;
-        end process create_scancode;
-
+		end process input_parallizer;
+		
+	ready_synchronous : process (clk, set_ready, ready)
+		begin
+			if clk'event and clk = '1' then
+				if set_ready = '1' then
+					ready <= '1';
+					set_ready <= '0';
+				elsif ready = '1' then
+					ready <= '0';
+				end if;
+			end if;
+		end process ready_synchronous;
+		
     komp_e0 : process (scancode)
         begin
             if scancode = "11100000" then
@@ -90,27 +110,27 @@ begin
             end if;
         end process komp_f0;
 
-    MUX_ledort : process (ready, ef, scancode, ledort)
+    MUX_ledout : process (ready, ef, scancode, ledout)
         begin
             case STD_LOGIC_VECTOR'(ready, ef) is
                 when "10" => akt_scancode <= scancode;
-                when others => akt_scancode <= ledort;
+                when others => akt_scancode <= ledout;
             end case;
-        end process MUX_ledort;
+        end process MUX_ledout;
     
     OR_ef : process (e0, f0)
         begin
             ef <= e0 or f0;
         end process OR_ef;
         
-    FF_ledort : process (clk, akt_scancode, reset)
+    FF_ledout : process (clk, akt_scancode, reset)
         begin
             if reset = '1' then
-                ledort <= "00000000";
+                ledout <= "00000000";
             elsif clk'event and clk = '1' then
-                ledort <= akt_scancode;
+                ledout <= akt_scancode;
             end if;
-        end process FF_ledort;
+		end process FF_ledout;
         
     hex2seven : process (akt_scancode)
         begin
@@ -212,30 +232,34 @@ begin
             end if;
         end process FF_seg_0;
     
-    MUX_segmentort : process (seg_3, seg_2, seg_1, seg_0, counter(11), counter(12))
+    MUX_segmentout : process (seg_7, seg_6, seg_5, seg_4, seg_3, seg_2, seg_1, seg_0, counter(10), counter(11), counter(12))
         begin
             case STD_LOGIC_VECTOR'(counter(12), counter(11), counter(10)) is
-                when "000" => segmentort <= "01111111"&seg_7;
-                when "001" => segmentort <= "10111111"&seg_6;
-                when "010" => segmentort <= "11011111"&seg_5;
-                when "011" => segmentort <= "11101111"&seg_4;
-                when "100" => segmentort <= "11110111"&seg_3;
-                when "101" => segmentort <= "11111011"&seg_2;
-                when "110" => segmentort <= "11111101"&seg_1;
-                when "111" => segmentort <= "11111110"&seg_0;
-                when others => segmentort <= "11111111"&seg_3;
+                when "000" => segmentout <= "01111111"&seg_7;
+                when "001" => segmentout <= "10111111"&seg_6;
+                when "010" => segmentout <= "11011111"&seg_5;
+                when "011" => segmentout <= "11101111"&seg_4;
+                when "100" => segmentout <= "11110111"&seg_3;
+                when "101" => segmentout <= "11111011"&seg_2;
+                when "110" => segmentout <= "11111101"&seg_1;
+                when "111" => segmentout <= "11111110"&seg_0;
+                when others => segmentout <= "11111111"&seg_3;
             end case;
-        end process MUX_segmentort;
+        end process MUX_segmentout;
 
     takt_teiler : process (clk)
         begin
             if clk'event and clk = '1' then
-                 counter <= STD_LOGIC_VECTOR(to_unsigned(to_integer(unsigned( counter )) +1, 13));
+                 counter <= counter + 1;
             end if;
         end process takt_teiler;
         
     stw : process (reset, ready, e0, f0, s, clk)
         begin
+			if reset = '1' then
+				ce <= '1';
+				s <= s1;
+			end if;
             if clk'event and clk = '1' then
                 case s is
                     when s1 => case ready is
@@ -258,3 +282,19 @@ begin
         end process stw;
     
 end Behavioral;
+
+            
+			
+    --eingabe_opw : process (t_clock, t_data, in_counter)
+        --begin
+			--if t_clock'event and t_clock = '0' then
+				--t_data_reg <= t_data & t_data_reg (10 downto 1);
+				--scancode <= t_data_reg (8 downto 1);
+				--in_counter <= in_counter + 1;
+				--ready <= '0';
+				--if in_counter = "1011" then
+	--				in_counter <= (others => '0');
+--					ready <= '1';
+				--end if;
+--			end if;
+        --end process eingabe_opw;

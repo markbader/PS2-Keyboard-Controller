@@ -67,7 +67,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint keyboard_controler_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Privat/PS2_Keyboard_Controler/PS2_Keyboard_Controler.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.cache/wt} [current_project]
   catch { write_mem_info -force keyboard_controler.mmi }
   write_bitstream -force keyboard_controler.bit 
   catch {write_debug_probes -quiet -force keyboard_controler}

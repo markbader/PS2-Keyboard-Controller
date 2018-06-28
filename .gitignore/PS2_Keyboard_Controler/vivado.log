@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun 28 17:39:40 2018
+# Process ID: 15880
+# Current directory: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20036 C:\Users\Leon Schmidt\Documents\Studium\2. Semester\VHDL\PS2-Controller\PS2-Keyboard-Controller\.gitignore\PS2_Keyboard_Controler\PS2_Keyboard_Controler.xpr
+# Log file: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/vivado.log
+# Journal file: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Privat/PS2_Keyboard_Controler' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.ip_user_files', nor could it be found using path 'C:/Users/Privat/PS2_Keyboard_Controler/PS2_Keyboard_Controler.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 744.133 ; gain = 27.332
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:02:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 18:02:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/.Xil/Vivado-15880-LEON-SCHMIDT-HP/dcp0/keyboard_controler.xdc]
+Finished Parsing XDC File [C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/.Xil/Vivado-15880-LEON-SCHMIDT-HP/dcp0/keyboard_controler.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1092.684 ; gain = 0.102
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1092.684 ; gain = 0.102
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1178.957 ; gain = 400.305
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ledout[7]} {ledout[6]} {ledout[5]} {ledout[4]} {ledout[3]} {ledout[2]} {ledout[1]} {ledout[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segmentout[14]} {segmentout[13]} {segmentout[12]} {segmentout[11]} {segmentout[10]} {segmentout[9]} {segmentout[8]} {segmentout[7]} {segmentout[6]} {segmentout[5]} {segmentout[4]} {segmentout[3]} {segmentout[2]} {segmentout[1]} {segmentout[0]}]]
+place_ports {segmentout[14]} U13
+place_ports {segmentout[13]} K2
+place_ports {segmentout[12]} T14
+place_ports {segmentout[11]} P14
+place_ports {segmentout[10]} J14
+place_ports {segmentout[9]} T9
+place_ports {segmentout[8]} J18
+place_ports {segmentout[7]} J17
+place_ports {segmentout[6]} T10
+place_ports {segmentout[5]} R10
+place_ports {segmentout[4]} K16
+place_ports {segmentout[3]} K13
+place_ports {segmentout[2]} P15
+place_ports {segmentout[1]} T11
+place_ports {segmentout[0]} L18
+place_ports {ledout[7]} U16
+place_ports {ledout[6]} U17
+place_ports {ledout[5]} V17
+place_ports {ledout[4]} R18
+place_ports {ledout[3]} N14
+place_ports {ledout[2]} J13
+place_ports {ledout[1]} K15
+place_ports {ledout[0]} H17
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Thu Jun 28 18:07:55 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:09:10 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744319A
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:30:24 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 18:30:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:32:40 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 18:32:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:44:14 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 18:44:14 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 18:52:45 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 18:52:45 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292744319A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744319A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 19:23:42 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 19:23:42 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 19:46:14 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 19:46:14 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 19:50:29 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 19:50:29 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 19:56:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 19:56:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:01:21 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:01:21 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:07:25 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:07:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:26:25 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:26:25 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:41:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:41:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:42:12 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:42:12 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:42:41 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:42:41 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:49:21 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:49:21 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:53:33 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:53:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 20:57:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 20:57:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Jun 28 21:05:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 21:05:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.srcs/constrs_1/new/keyboard_controler.xdc]
+Finished Parsing XDC File [C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.srcs/constrs_1/new/keyboard_controler.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jun 28 21:09:33 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 21:09:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jun 28 21:17:40 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 21:17:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jun 28 21:27:49 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/synth_1/runme.log
+[Thu Jun 28 21:27:49 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1/keyboard_controler.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Privat/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1'
+HD_PWD='C:/Users/Leon Schmidt/Documents/Studium/2. Semester/VHDL/PS2-Controller/PS2-Keyboard-Controller/.gitignore/PS2_Keyboard_Controler/PS2_Keyboard_Controler.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

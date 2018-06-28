@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jun 28 17:12:12 2018
-| Host         : Mark running 64-bit major release  (build 9200)
+| Date         : Thu Jun 28 21:43:29 2018
+| Host         : LEON-SCHMIDT-HP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file keyboard_controler_methodology_drc_routed.rpt -pb keyboard_controler_methodology_drc_routed.pb -rpx keyboard_controler_methodology_drc_routed.rpx
 | Design       : keyboard_controler
 | Device       : xc7a100tcsg324-1
@@ -104,67 +104,67 @@ Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[0]/C is not reached by a timing clock
+The clock pin in_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[1]/C is not reached by a timing clock
+The clock pin in_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[2]/C is not reached by a timing clock
+The clock pin in_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[3]/C is not reached by a timing clock
+The clock pin in_counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[4]/C is not reached by a timing clock
+The clock pin ledout_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[5]/C is not reached by a timing clock
+The clock pin ledout_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[6]/C is not reached by a timing clock
+The clock pin ledout_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin ledort_reg[7]/C is not reached by a timing clock
+The clock pin ledout_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin s_reg/C is not reached by a timing clock
+The clock pin ledout_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin scan_counter_reg[0]/C is not reached by a timing clock
+The clock pin ledout_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin scan_counter_reg[1]/C is not reached by a timing clock
+The clock pin ledout_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin scan_counter_reg[2]/C is not reached by a timing clock
+The clock pin ledout_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
 Non-clocked sequential cell  
-The clock pin scan_counter_reg[3]/C is not reached by a timing clock
+The clock pin s_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Warning

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jun 28 17:11:10 2018
-| Host         : Mark running 64-bit major release  (build 9200)
+| Date         : Thu Jun 28 21:42:57 2018
+| Host         : LEON-SCHMIDT-HP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file keyboard_controler_utilization_placed.rpt -pb keyboard_controler_utilization_placed.pb
 | Design       : keyboard_controler
 | Device       : 7a100tcsg324-1
@@ -67,9 +67,9 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |   34 |     0 |     15850 |  0.21 |
-|   SLICEL                                  |   28 |     0 |           |       |
-|   SLICEM                                  |    6 |     0 |           |       |
+| Slice                                     |   33 |     0 |     15850 |  0.21 |
+|   SLICEL                                  |   25 |     0 |           |       |
+|   SLICEM                                  |    8 |     0 |           |       |
 | LUT as Logic                              |   68 |     0 |     63400 |  0.11 |
 |   using O5 output only                    |    0 |       |           |       |
 |   using O6 output only                    |   58 |       |           |       |
@@ -77,10 +77,10 @@ Table of Contents
 | LUT as Memory                             |    0 |     0 |     19000 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
 |   LUT as Shift Register                   |    0 |     0 |           |       |
-| LUT Flip Flop Pairs                       |   26 |     0 |     63400 |  0.04 |
+| LUT Flip Flop Pairs                       |   23 |     0 |     63400 |  0.04 |
 |   fully used LUT-FF pairs                 |    3 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |   23 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |   19 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |   18 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |   14 |       |           |       |
 | Unique Control Sets                       |   13 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -174,17 +174,17 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDPE     |   56 |        Flop & Latch |
-| LUT6     |   43 |                 LUT |
+| LUT6     |   41 |                 LUT |
 | FDRE     |   35 |        Flop & Latch |
 | OBUF     |   23 |                  IO |
-| LUT4     |   14 |                 LUT |
+| LUT4     |   16 |                 LUT |
 | LUT3     |   12 |                 LUT |
 | FDCE     |    8 |        Flop & Latch |
 | MUXF7    |    7 |               MuxFx |
-| LUT5     |    4 |                 LUT |
+| LUT5     |    5 |                 LUT |
 | IBUF     |    4 |                  IO |
 | CARRY4   |    4 |          CarryLogic |
-| LUT2     |    3 |                 LUT |
+| LUT2     |    2 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
